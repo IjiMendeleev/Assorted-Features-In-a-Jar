@@ -22,21 +22,15 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockWC extends BlockBase 
 {
-    @SideOnly(Side.CLIENT)
-	public BlockWC(String name, Material material, SoundType sound) 
+    public BlockWC(String name, Material material, SoundType sound) 
 	{
     	super(name, material, sound);
-        setUnlocalizedName(name);
-        setRegistryName("BlockWC");
         setCreativeTab(CreativeTabs.MISC);
-        setSoundType(sound);
-             
+                     
         ABlocks.BLOCKS.add(this);
         AItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
     
 	}
-
-	public static final String name = "watercandle";
 	
 	public boolean isOpaqueCube(IBlockState state)
     {
