@@ -12,7 +12,7 @@ public class ABlocks
 {
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
 	
-	public static final BlockWC WATER_CANDLE = new BlockWC("afiajar:water_candle", Material.CACTUS, SoundType.ANVIL);
+	public static final BlockWC WATER_CANDLE = new BlockWC("water_candle", Material.CACTUS, SoundType.ANVIL);
 }
 
 
