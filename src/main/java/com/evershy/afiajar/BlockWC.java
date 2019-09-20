@@ -26,7 +26,9 @@ public class BlockWC extends BlockBase
 	{
     	super(name, material, sound);
         setCreativeTab(CreativeTabs.MISC);
-     
+        setLightLevel(1F);
+                     
+        AItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
 	
 	public boolean isOpaqueCube(IBlockState state)
