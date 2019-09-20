@@ -45,11 +45,13 @@ public class BlockWC extends BlockBase
         return false;
     }
     
+    @Override
     public void randomTick(net.minecraft.world.World worldIn, net.minecraft.util.math.BlockPos pos, net.minecraft.block.state.IBlockState state, java.util.Random random)
 	{
       ForgeEventFactory.doSpecialSpawn(new EntityZombie(worldIn), worldIn,(float) pos.getX(),(float) pos.getY(),(float) pos.getZ());
 	}
-
+   
+    @Override
 	public void registerModels() 
 	{
 		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "normal");		
