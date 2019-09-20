@@ -41,7 +41,6 @@ public class Main
 	@EventHandler
 	public static void PreInit(FMLPreInitializationEvent event)
 	{
-		RenderingRegistry.registerEntityRenderingHandler(EntityPebble.class, new RenderSnowball(Minecraft.getMinecraft().getRenderManager(),AItems.PEBBLE,Minecraft.getMinecraft().getRenderItem()));
 	}
 	
 	@EventHandler
