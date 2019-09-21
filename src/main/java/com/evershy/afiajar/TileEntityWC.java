@@ -9,6 +9,7 @@ import net.minecraft.util.ITickable;
 import net.minecraft.util.WeightedSpawnerEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraftforge.common.util.FakePlayer;
 
 import com.evershy.afiajar.TileEntityWC;
 import com.google.common.collect.Lists;
@@ -19,23 +20,9 @@ public class TileEntityWC extends TileEntity implements ITickable
 	public void update() 
 	{
 	}
-    
-	public <onRandomTick> TileEntityWC(World worldIn)
+	
+	public void Spawner()
 	{
-		Entity entity = spawnCreature(worldIn, getNamedIdFrom());
+		
 	}
-	
-	private Object getNamedIdFrom() 
-	{
-		return Lists.<WeightedSpawnerEntity>newArrayList();;
-	}
-
-	private final MobSpawnerBaseLogic spawnerLogic = new MobSpawnerBaseLogic();
-	
-	public MobSpawnerBaseLogic getSpawnerBaseLogic()
-   {
-	        return this.spawnerLogic;
-   }
-	
-	
 }
